@@ -8,4 +8,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Login.unity
+    guid: f9b4687adfbe0334995884d4662573e0
+  - enabled: 1
+    path: Assets/OpretBruger.unity
+    guid: dad12de4797abec4497373391de582cc
+  - enabled: 1
+    path: Assets/Menu.unity
+    guid: 27af9afbdf77dba47a495b82a99aee52
+  - enabled: 1
+    path: Assets/eksiBruger.unity
+    guid: c61f5cd05884b0f498ff737986b5388d
+  - enabled: 1
+    path: Assets/BrugerProfil.unity
+    guid: 6e3a9207529daa84f847c92840d39d96
+  - enabled: 1
+    path: Assets/Butik.unity
+    guid: 176fd120695fccb4ebf4da948bd83750
+  - enabled: 1
+    path: Assets/Indstillinger.unity
+    guid: 92678ac9963f79542a751a6471f419f3
+  - enabled: 1
+    path: Assets/Kalender.unity
+    guid: 7e320723c45e7fe45befec572388b278
+  - enabled: 1
+    path: Assets/Kontakt.unity
+    guid: 7f1d074e8f739264bb052f7c191f1d29
+  - enabled: 1
+    path: Assets/Spil.unity
+    guid: 3aceffdf9f7e4964caa105d18dc5c933
+  - enabled: 1
+    path: Assets/LinseKast.unity
+    guid: 90206c6352a046f4cb9409060e5ba740
+  - enabled: 1
+    path: Assets/LinseSortering.unity
+    guid: 2b8584818359a8a42a55b2dfa704c8ad
   m_configObjects: {}

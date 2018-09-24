@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Louis Nielsen.unity
+- path: Assets/eksiBruger.unity
   isLoaded: 1
   isActive: 1
