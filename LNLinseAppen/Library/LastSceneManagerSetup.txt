@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/alarmScene.unity
-=======
-- path: Assets/Scenes/KommunikationsFrameWork.unity
->>>>>>> Marc
+- path: Assets/linsesortering styrke.unity
   isLoaded: 1
   isActive: 1
