@@ -8,7 +8,7 @@ public class FallDown : MonoBehaviour
     private float speed = 1;
 
     [SerializeField]
-    GameObject ps;
+    GameObject ps, ls;
 
     [SerializeField]
     internal List<Material> colors;
@@ -17,7 +17,7 @@ public class FallDown : MonoBehaviour
     void Start()
     {
         ps = GameObject.Find("PointSystem");
-
+        ls = GameObject.Find("Lives");
     }
 
     // Update is called once per frame
@@ -33,13 +33,23 @@ public class FallDown : MonoBehaviour
         {
             if (collider.tag == "Player")
             {
-                if(collider.GetComponent<LinseSorteringLinseStyrke>().styrke == gameObject.GetComponent<LinseSorteringLinseStyrke>().styrke)
+                if (collider.GetComponent<LinseSorteringLinseStyrke>().styrke == gameObject.GetComponent<LinseSorteringLinseStyrke>().styrke)
                 {
                     ps.GetComponent<PointSystem>().AddPoint();
 
                 }
-            }
 
+                if (collider.GetComponent<LinseSorteringLinseStyrke>().styrke != gameObject.GetComponent<LinseSorteringLinseStyrke>().styrke)
+                {
+                    ls.GetComponent<Lives>().SubtractLives();
+                }
+
+            }
+            else if (collider.tag == "Ground")
+            {
+                // Debug.Log("Hej med dig");
+                ls.GetComponent<Lives>().SubtractLives();
+            }
             Destroy(gameObject);
 
         }

@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LinseSortering.unity
     guid: 2b8584818359a8a42a55b2dfa704c8ad
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 7fa7490fb7dd1624cb7e89c21df57548
   m_configObjects: {}

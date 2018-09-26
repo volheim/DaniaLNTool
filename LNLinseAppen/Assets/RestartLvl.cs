@@ -18,7 +18,8 @@ public class RestartLvl : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Application.LoadLevel(scene.name);
+            //Application.LoadLevel(scene.name);
+            SceneManager.LoadScene(scene.name);
         }
     }
 }

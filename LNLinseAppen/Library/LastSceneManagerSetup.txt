@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/eksiBruger.unity
-=======
 - path: Assets/LinseSorteringSpil.unity
->>>>>>> master
   isLoaded: 1
   isActive: 1

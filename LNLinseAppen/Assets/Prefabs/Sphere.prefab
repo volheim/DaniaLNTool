@@ -115,6 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   styrke: 0
   linse: 1
+  colors: []
 --- !u!114 &114751122154001774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -128,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   ps: {fileID: 1787219508709250, guid: 4f343945b54824e448292f409dd159aa, type: 2}
+  ls: {fileID: 0}
   colors:
   - {fileID: 2100000, guid: 56a5f834e64da7e45b140b173e1806d7, type: 2}
   - {fileID: 2100000, guid: 3b84861ce4b29a744b3f0899883f8613, type: 2}

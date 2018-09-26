@@ -27,7 +27,7 @@ public class PointSystem : MonoBehaviour
     }
     void UpdatePoint()
     {
-        textpoint.text = point.ToString();
+        textpoint.text = "Score: " + point.ToString();
     }
     public void AddPoint()
     {
