@@ -14,9 +14,27 @@
 *.pidb
 *.booproj
 *.ide
+*.dwlt
 
 # Unity3D generated meta files
 *.pidb.meta
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
+
+\DaniaLNTool\LNLinseAppen\Library\CurrentLayout.dwlt
+LNLinseAppen/Library/metadata/39/39cc17e2499426643930bfff806ec06c
+
+LNLinseAppen/Library/metadata/3f/3f3232ed64797364e8ec816800a5103a
+
+LNLinseAppen/Library/metadata/3f/3f3232ed64797364e8ec816800a5103a\.info
+
+LNLinseAppen/Library/metadata/fe/fecaf3741ec50894c9364e79590f991f
+
+LNLinseAppen/Library/metadata/
+
+*.log
+
+*.cache
+
+LNLinseAppen/ProjectSettings/EditorBuildSettings\.asset
