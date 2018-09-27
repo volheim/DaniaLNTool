@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 7fa7490fb7dd1624cb7e89c21df57548
+  - enabled: 1
+    path: Assets/LinseSorteringSpil.unity
+    guid: 78449430db422784a9f83834648f4a8f
   m_configObjects: {}

@@ -35,17 +35,17 @@ public class Lives : MonoBehaviour {
         lives -= 1;
         if (lives <= 0)
         {
-            Debug.Log("Hej med dig");
-            Application.LoadLevel("GameOver");
-            //SceneManager.LoadScene("GameOver");
+            Debug.Log("Skift scene");
+            //Application.LoadLevel("GameOver");
+            SceneManager.LoadScene("GameOver");
         }
     }
 
-    public void ChangeScene(string name)
-    {
+    //public void ChangeScene(string name)
+    //{
         
         
-    }
+    //}
 }
 
 

@@ -18,8 +18,9 @@ public class RestartLvl : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            //Application.LoadLevel(scene.name);
-            SceneManager.LoadScene(scene.name);
+            //Application.LoadLevel(scene.name); // Bruges ikke mere, men virker (Smiley)
+            SceneManager.LoadScene(scene.name); //  Dynamisk - Henter den aktive scene fra scene, som er angivet i void Start
+            SceneManager.LoadScene("LinseSorteringSpil"); // Går direkte ind på den scene man angiver - Ikke Dynamisk
         }
     }
 }
