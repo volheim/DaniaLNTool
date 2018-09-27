@@ -7,12 +7,23 @@ public class PointSystem : MonoBehaviour
 {
 
     [SerializeField]
-    Text textpoint;
+    public Text textpoint;
+
+    private static bool created;
 
     [SerializeField]
-    private int point;
+    public int point;
 
 
+    void Awake()
+    {
+        if (!created)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            created = true;
+            Debug.Log("Awake: " + this.gameObject);
+        }
+    }
     // Use this for initialization
     void Start()
     {
@@ -23,7 +34,7 @@ public class PointSystem : MonoBehaviour
     void Update()
     {
         UpdatePoint();
-     
+
     }
     void UpdatePoint()
     {

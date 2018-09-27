@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement; //Scene management - sørger for at scene skift virker
 
 
 public class RestartLvl : MonoBehaviour
@@ -11,7 +11,7 @@ public class RestartLvl : MonoBehaviour
 
     void Start()
     {
-        scene = SceneManager.GetActiveScene();
+        scene = SceneManager.GetActiveScene(); //Tager den aktive scene, man arbejder i
     }
 
     void OnTriggerEnter(Collider other)
