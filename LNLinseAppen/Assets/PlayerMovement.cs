@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collider.tag == "Wall")
         {
+            Debug.Log("WORK! - Restarting Position pls");
             transform.position = startPosition;
         }
     }
