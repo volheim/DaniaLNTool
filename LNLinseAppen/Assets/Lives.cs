@@ -41,11 +41,7 @@ public class Lives : MonoBehaviour {
         }
     }
 
-    //public void ChangeScene(string name)
-    //{
-        
-        
-    //}
+
 }
 
 

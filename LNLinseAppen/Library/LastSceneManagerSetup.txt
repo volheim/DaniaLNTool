@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/LinseSorteringSpil.unity
+- path: Assets/Kontakt.unity
   isLoaded: 1
   isActive: 1
