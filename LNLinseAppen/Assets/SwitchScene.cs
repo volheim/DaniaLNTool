@@ -29,5 +29,9 @@ public class SwitchScene : MonoBehaviour
             
         }
     }
+    public void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
 
 }

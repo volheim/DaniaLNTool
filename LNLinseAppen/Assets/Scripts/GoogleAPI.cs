@@ -13,8 +13,8 @@ public class GoogleAPI : MonoBehaviour
     LocationInfo li;
 
     public int zoom;
-    public int mapHeight = 640;
-    public int mapWidth = 640;
+    public int mapHeight = 300;
+    public int mapWidth = 300;
 
     public enum mapType { roadmap, sattelite, hybrid, terrain }
     public mapType mapSelected;

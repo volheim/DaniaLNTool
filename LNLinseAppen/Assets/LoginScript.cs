@@ -21,5 +21,9 @@ public class LoginScript : MonoBehaviour
             IncorrectInfo.text = "Forkert kundeID eller password";
         }
     }
+    public void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
 
 }
