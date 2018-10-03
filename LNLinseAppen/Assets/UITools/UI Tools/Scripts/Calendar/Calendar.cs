@@ -31,13 +31,13 @@ public class Calendar : MonoBehaviour
 
     [Header("Design")]
     public Sprite background = null;
-    
+
     #region Public Events
     /// <summary>
     /// Called whenever a button is clicked with the LEFT MOUSE BUTTON
     /// </summary>
     public event LeftClicked OnButtonClicked;
-    
+
     /// <summary>
     /// Called whenever a button is double-clicked with the LEFT MOUSE BUTTON
     /// </summary>
@@ -83,7 +83,7 @@ public class Calendar : MonoBehaviour
     public delegate void EventRemoved(List<ButtonEvent> eventDataList);
     #endregion
 
-    private enum Months { January = 1, Februar, Marts, April, Maj, Juni, Juli, August, September, Oktober, November, December };
+    private enum Months { Januar = 1, Februar, Marts, April, Maj, Juni, Juli, August, September, Oktober, November, December };
     private Dictionary<DateTime, ButtonEventData> events = new Dictionary<DateTime, ButtonEventData>();
     private DateTime firstDOM;
 
@@ -308,7 +308,7 @@ public class Calendar : MonoBehaviour
     public void RemoveEvent(int day, ButtonEvent eventData)
     {
         DateTime thisDay = new DateTime(targetDate.Year, targetDate.Month, day);
-        
+
         events[thisDay].buttonEvents.Remove(eventData);
         ReloadDay(day);
 
@@ -323,8 +323,8 @@ public class Calendar : MonoBehaviour
     public void RemoveEvent(int day, ButtonEvent[] eventData)
     {
         DateTime thisDay = new DateTime(targetDate.Year, targetDate.Month, day);
-        
-        for(int i = 0; i < eventData.Length; i++) { events[thisDay].buttonEvents.Remove(eventData[i]); }
+
+        for (int i = 0; i < eventData.Length; i++) { events[thisDay].buttonEvents.Remove(eventData[i]); }
         ReloadDay(day);
 
         if (OnEventRemoved != null) { OnEventRemoved(events[thisDay].buttonEvents); }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 /// <summary>
 /// Calendar UI Tool - Data Class
@@ -18,6 +19,13 @@ public class CalendarButton : MonoBehaviour, IPointerClickHandler {
     protected Calendar calendar;
     protected ButtonEventData data;
 
+    public GameObject calendarHandler;
+
+    void Start()
+    {
+        calendarHandler = GameObject.Find("Calendar Handler");
+    }
+
     public void SetCalendar(Calendar targetCalendar, ButtonEventData eventData)
     {
         calendar = targetCalendar;
@@ -26,6 +34,17 @@ public class CalendarButton : MonoBehaviour, IPointerClickHandler {
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        calendarHandler.GetComponent<ShowSelectedDayInfo>().button = gameObject.GetComponent<Button>();
         calendar.SendClickEvents(eventData, data);
+
+        
+        foreach (GameObject item in GameObject.FindGameObjectsWithTag("DatoTag"))
+        {
+            item.SetActive(false);
+        }
+
+        GameObject.Find("Canvas").transform.FindChild("Dato Text" + gameObject.name).gameObject.SetActive(true);
+
+        calendarHandler.GetComponent<ShowSelectedDayInfo>().giveText = GameObject.Find("Canvas").transform.FindChild("Dato Text" + gameObject.name).GetComponent<Text>();
     }
 }
