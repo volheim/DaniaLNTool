@@ -25,14 +25,6 @@ public class ShowSelectedDayInfo : MonoBehaviour
         thisDate1 = new DateTime(2018, 4, 10);
     }
 
-    //public void CompareDates()
-    //{
-    //    if (selectedButton.GetComponent<SelectedButton>().date == thisDate1)
-    //    {
-    //        giveText.text = "4. Oktober";
-    //    }
-    //}
-
     public void SetEvent()
     {
         cal.GetComponent<Calendar>().AddEvent(Convert.ToInt16(button.gameObject.name.Remove(0,4)), textBox.text, null, false);
