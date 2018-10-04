@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/BrugerProfil.unity
+- path: "Assets/Sp\xF8rgeskema 2.unity"
   isLoaded: 1
   isActive: 1
