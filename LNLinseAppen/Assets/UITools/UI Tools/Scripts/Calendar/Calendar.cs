@@ -124,7 +124,7 @@ public class Calendar : MonoBehaviour
         int daysInWeek = DateTime.DaysInMonth(targetDate.Year, targetDate.Month);
         firstDOM = new DateTime(targetDate.Year, targetDate.Month, 1);
 
-        int daysofWeekPrevMonth = DateTime.DaysInMonth(targetDate.Year, targetDate.Month - 1);
+        int daysofWeekPrevMonth = DateTime.DaysInMonth(targetDate.Year, ((targetDate.Month - 1 > 0) ? targetDate.Month - 1 : 12));
         for (int i = 0; i < (int)firstDOM.DayOfWeek; i++)
         {
             Transform btn = (Transform)Instantiate(DOM_locked.gameObject).transform;
