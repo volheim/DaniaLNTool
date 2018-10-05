@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Kalender.unity
+- path: Assets/Scenes/Spil.unity
   isLoaded: 1
   isActive: 1
